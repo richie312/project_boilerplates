@@ -8,11 +8,9 @@ echo The current user is %user_name%
 echo Virtual env and project setup is initialised for %project_name% ...
 
 timeout /t 10
-cd C:\users\%user_name%\envs
-pip install virtualenv
-virtualenv %project_name%
-%project_name%\Scripts\Activate.bat
-pip install -r requirements.txt
+
+cd C:\users\%user_name%\envs && virtualenv %project_name%
 cd %current_dir%
 echo c:\users\%user_name%\envs\%project_name%\bin\Scripts\Activate.bat > %env_file_name%
 echo The environment filename %env_file_name% is created to activate the environment.
+C:\Users\%user_name%\envs\%project_name%\Scripts\Activate.bat && pip install -r requirements.txt
