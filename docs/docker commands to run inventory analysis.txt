@@ -1,0 +1,16 @@
+# To Pull New Image from ECR
+docker pull <<repo>>
+# To Run the Program
+docker run -dit -P --name <<container_name>> -v <<local_mount_path>>:<<container_output_path>> <<docker_img_name>>
+
+# Incase you face error due to image blocked by another container, then first try to stop and remove the existing container with the following command(then run the above command),
+
+# get the container id
+docker ps -a
+#stop the container id
+docker stop <container id>
+
+# remove the container id
+docker rm <d1e27333470a>
+
+

@@ -1,0 +1,13 @@
+*.git
+*.bat
+*pythonProject
+*.idea
+*.coverage
+*spark-warehouse
+*.pytest_cache
+*htmlcov
+*.log
+*__pycache__
+*temp
+*venv
+postmerge.bat

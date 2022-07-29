@@ -1,0 +1,6 @@
+pandas
+pytest
+pytest-cov
+python-dotenv
+boto3
+pre-commit

@@ -1,0 +1,2 @@
+
+coverage run --source=src --module pytest --verbose test && coverage report --show-missing --omit=src/pipeline/processor.py
