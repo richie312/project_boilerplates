@@ -16,6 +16,3 @@ pip install -r requirements.txt
 cd %current_dir%
 echo c:\users\%user_name%\envs\%project_name%\bin\Scripts\Activate.bat > %env_file_name%
 echo The environment filename %env_file_name% is created to activate the environment.
-
-
-

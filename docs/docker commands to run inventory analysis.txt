@@ -12,5 +12,3 @@ docker stop <container id>
 
 # remove the container id
 docker rm <d1e27333470a>
-
-

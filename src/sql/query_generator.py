@@ -11,13 +11,11 @@ class Generator(object):
     def __init__(self, payload):
         self.payload = payload
 
-
     def delete_query(self):
         query = """del from {table_name} where {target_column}=%s""".format(
             table_name=self.payload["TableName"],
             target_column=self.payload["TargetColumn"],
         )
-
 
     def insert_query(self, columns, data_type):
 
@@ -29,7 +27,6 @@ class Generator(object):
         )
         print(insert_query)
         return insert_query
-
 
     def col_query(self, *data_type, db_type=None):
 

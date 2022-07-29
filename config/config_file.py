@@ -1,3 +1,1 @@
-config_data = {
-	"dev":{}
-}
+config_data = {"dev": {}}
